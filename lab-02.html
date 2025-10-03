@@ -428,7 +428,32 @@ plastic_data_all %&gt;% head(n = 10)</code></pre>
 <h2>Exercises</h2>
 <div id="ex-1." class="section level3">
 <h3>Ex 1.</h3>
-<pre class="r"><code># Write your code here to answer exercise 1</code></pre>
+<pre class="r"><code># Write your code here to answer exercise 1
+ plastic_data_all%&gt;% count(region)</code></pre>
+<pre><code>## # A tibble: 6 × 2
+##   region                              n
+##   &lt;chr&gt;                           &lt;int&gt;
+## 1 Africa                             43
+## 2 Asia                               39
+## 3 Europe                             31
+## 4 Latin America and The Caribbean    34
+## 5 North America                       2
+## 6 Oceania                            10</code></pre>
+<pre class="r"><code> plastic_data_all%&gt;% arrange(region)</code></pre>
+<pre><code>## # A tibble: 159 × 6
+##    code  region population mismanaged_plastic_ocean name      mismanaged_plastic
+##    &lt;chr&gt; &lt;chr&gt;       &lt;dbl&gt;                    &lt;dbl&gt; &lt;chr&gt;                  &lt;dbl&gt;
+##  1 AGO   Africa     31808.                  0.0270  Angola                  7.45
+##  2 BEN   Africa     12114.                  0.139   Benin                  11.3 
+##  3 BFA   Africa     20671.                  0       Burkina …              15.6 
+##  4 CIV   Africa     25818.                  0.186   Cote d&#39;I…              11.3 
+##  5 CMR   Africa     25428.                  0.412   Cameroon               22.4 
+##  6 COD   Africa     88482.                  0.00484 Democrat…              15.8 
+##  7 COG   Africa      5506.                  0.126   Congo                  12.1 
+##  8 COM   Africa       784.                  0       Comoros                69.5 
+##  9 CPV   Africa       574.                  0       Cape Ver…               6.49
+## 10 DJI   Africa      1066.                  0.00411 Djibouti               10.6 
+## # ℹ 149 more rows</code></pre>
 </div>
 <div id="ex-2." class="section level3">
 <h3>Ex 2.</h3>
