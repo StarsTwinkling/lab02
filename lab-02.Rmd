@@ -1,6 +1,6 @@
 ---
 title: "Lab 02 - Global plastic waste"
-author: "Tidybears123: Richard, Jason, Laith, User4"
+author: "Tidybears123: Richard, Jason, Laith, Ishildur"
 date: "`r Sys.Date()`"
 output: html_document
 ---
